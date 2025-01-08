@@ -34,7 +34,7 @@ const homePage = (_, res) => {
 const testPage = (req,res)=>{
     switch(req.method){
 case 'GET':
-res.writehead(200,{"Content-Type":"text/plain"});
+res.writeHead(200,{"Content-Type":"text/plain"});
 res.write("GET / testPage");
 res.end();
 break;
